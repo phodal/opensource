@@ -26,7 +26,7 @@ export class PractiseComponent implements OnInit {
       const param = p.get('practise');
       const currentCase = this.tanks.find((ca) => ca.source === param);
       this.title.setTitle(
-        `『DevOps 最佳实践』 — ${currentCase.displayName} - 开源知识平台`
+        `开源软件最佳实践 — ${currentCase.displayName} - 开源知识平台`
       );
       this.configSource(param);
     });

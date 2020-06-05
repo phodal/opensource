@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     private shepherdService: ShepherdService,
     public translate: TranslateService
   ) {
-    title.setTitle('DevOps 工具元素周期表 - 开源知识平台');
+    title.setTitle('开源软件 - 开源知识平台');
   }
 
   category: string;

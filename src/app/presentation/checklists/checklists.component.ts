@@ -30,7 +30,7 @@ export class ChecklistsComponent implements OnInit {
       const param = p.get('name');
       const currentItem = this.items.find((item) => item.source === param);
       this.title.setTitle(
-        `DevOps ${currentItem.displayName} 检查清单 - 开源知识平台`
+        `开源软件 ${currentItem.displayName} 检查清单 - 开源知识平台`
       );
       this.currentSource = param;
     });
