@@ -1,0 +1,59 @@
+<div class="ledge-app">
+  <mat-toolbar color="accent" [ngClass]="isHome() ? 'app-header' : ''">
+    <mat-toolbar-row>
+      <button mat-button class="button-logo" routerLink="/home">
+        <img src="/assets/images/logo.svg" alt="logo" class="logo">
+      </button>
+      <span class="spacer"></span>
+      <div class="right" fxShow="true" fxHide.lt-md="true">
+        <ng-template *ngTemplateOutlet="navMenu"></ng-template>
+      </div>
+
+      <div fxHide="true" fxShow.lt-md="true">
+        <button mat-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav fxLayout="column">
+      <div fxLayout="column" class="ledge-side-menu">
+        <ng-template *ngTemplateOutlet="navMenu"></ng-template>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<ng-template #navMenu>
+  <button mat-button routerLink="/home" routerLinkActive="active">{{ 'home' | translate}}</button>
+  <button mat-button routerLink="/case-study" class="intro-case" routerLinkActive="active"
+          matTooltip="{{ 'tips.case-study' | translate}}">
+    {{ 'case-study' | translate}}
+  </button>
+  <button mat-button routerLink="/pattern" class="intro-pattern" routerLinkActive="active"
+          matTooltip="{{ 'tips.patterns' | translate}}">
+    {{ 'patterns' | translate}}
+  </button>
+  <button mat-button routerLink="/practise/sample" class="intro-pattern" routerLinkActive="active"
+          matTooltip="{{ 'practises' | translate}}">
+    {{ 'practises' | translate}}
+  </button>
+  <button mat-button routerLink="/maturity" class="intro-pattern" routerLinkActive="active"
+          matTooltip="{{ 'maturity' | translate}}">
+    {{ 'maturity' | translate}}
+  </button>
+  <button mat-button routerLink="/checklists" class="intro-pattern" routerLinkActive="active"
+          matTooltip="{{ 'checklists' | translate}}">
+    {{ 'checklists' | translate}}
+  </button>
+  <button mat-button routerLink="/skilltree/sample" class="intro-pattern" routerLinkActive="active"
+          matTooltip="{{ 'skilltree' | translate}}">
+    {{ 'skilltree' | translate}}
+  </button>
+</ng-template>

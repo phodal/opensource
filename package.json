@@ -1,0 +1,131 @@
+{
+  "name": "ledge",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "./node_modules/.bin/ng",
+    "start": "yarn ng serve",
+    "build": "node --max_old_space_size=4096 ./node_modules/.bin/ng build",
+    "build:ci": "node --max_old_space_size=4096 ./node_modules/.bin/ng build --configuration ci",
+    "build:stats": "node --max_old_space_size=4096 ./node_modules/.bin/ng build --stats-json",
+    "analyze": "webpack-bundle-analyzer dist/ledge/stats-es2015.json",
+    "test": "yarn ng test",
+    "test:ci": "yarn ng test --watch=false --progress=false --browsers=ChromeHeadlessCI --codeCoverage",
+    "lint": "yarn ng lint",
+    "commit": "git-cz",
+    "package": "yarn build:ci && rm -rf dist/static && yarn scully",
+    "deploy": "yarn package && npx angular-cli-ghpages --repo=https://github.com/phodal/do.git --dir=dist/static --cname=devops.phodal.com",
+    "publish:cloudbase": "cloudbase hosting:deploy dist/static -e ledge2-8daa6a",
+    "scully": "scully --scanRoutes",
+    "scully:serve": "scully serve",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "private": false,
+  "dependencies": {
+    "@angular/animations": "~9.0.3",
+    "@angular/cdk": "^9.1.1",
+    "@angular/common": "~9.0.3",
+    "@angular/compiler": "~9.0.3",
+    "@angular/core": "~9.0.3",
+    "@angular/flex-layout": "^9.0.0-beta.29",
+    "@angular/forms": "~9.0.3",
+    "@angular/localize": "^9.1.0",
+    "@angular/material": "^9.1.1",
+    "@angular/platform-browser": "~9.0.3",
+    "@angular/platform-browser-dynamic": "^9.1.0",
+    "@angular/router": "~9.0.3",
+    "@angular/service-worker": "~9.0.3",
+    "@ledge-framework/render": "^1.0.0",
+    "@ledge-framework/view": "^1.0.0",
+    "@ngx-pwa/local-storage": "^9.0.2",
+    "@ngx-starter-kit/ngx-utils": "^0.0.8",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^4.0.0",
+    "@scullyio/init": "^0.0.25",
+    "@scullyio/ng-lib": "latest",
+    "@scullyio/scully": "latest",
+    "angular-shepherd": "^0.6.0",
+    "angular-split": "^3.0.3",
+    "brace": "^0.11.1",
+    "core-js": "^3.6.4",
+    "d3": "^5.15.0",
+    "d3-graphviz": "^3.0.4",
+    "dagre-d3": "^0.6.4",
+    "date-fns": "^2.12.0",
+    "echarts": "^4.6.0",
+    "graphlib-dot": "^0.6.4",
+    "marked": "^0.8.0",
+    "material-design-icons": "^3.0.1",
+    "mermaid": "^8.5.0",
+    "ng2-dragula": "^2.1.1",
+    "ngx-ace-tern": "^1.2.2",
+    "ngx-markdown": "^9.0.0",
+    "ngx-virtual-scroller": "^4.0.3",
+    "prismjs": "^1.20.0",
+    "rxjs": "~6.5.4",
+    "shortid": "^2.2.15",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.900.4",
+    "@angular-devkit/build-ng-packagr": "~0.900.5",
+    "@angular/cli": "~9.0.4",
+    "@angular/compiler-cli": "~9.0.3",
+    "@angular/language-service": "~9.0.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@gammastream/scully-plugin-sitemap": "^0.0.5",
+    "@types/d3": "^5.7.2",
+    "@types/echarts": "^4.4.3",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^0.6.2",
+    "codelyzer": "^5.1.2",
+    "cz-conventional-changelog": "3.1.0",
+    "husky": "^4.2.3",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.3.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "lint-staged": ">=10",
+    "ng-packagr": "^9.0.0",
+    "prettier": "^2.0.2",
+    "puppeteer": "^2.1.1",
+    "stylelint": "^13.3.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.16.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.18.0",
+    "typescript": "~3.7.5",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "xmlbuilder": "^15.1.0"
+  },
+  "browser": {
+    "crypto": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run test:ci"
+    }
+  },
+  "lint-staged": {
+    "src/app/**/*.{css,scss}": [
+      "stylelint --syntax=scss",
+      "prettier --parser --write"
+    ],
+    "{src,test}/**/*.ts": [
+      "prettier --write --single-quote"
+    ],
+    "*.{js,css,md}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
