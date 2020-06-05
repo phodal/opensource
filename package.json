@@ -13,7 +13,7 @@
     "lint": "yarn ng lint",
     "commit": "git-cz",
     "package": "yarn build:ci && rm -rf dist/static && yarn scully",
-    "deploy": "yarn package && npx angular-cli-ghpages --repo=https://github.com/phodal/do.git --dir=dist/static --cname=devops.phodal.com",
+    "deploy": "yarn package && npx angular-cli-ghpages --repo=https://github.com/phodal/do.git --dir=dist/static --cname=opensource.phodal.com",
     "publish:cloudbase": "cloudbase hosting:deploy dist/static -e ledge2-8daa6a",
     "scully": "scully --scanRoutes",
     "scully:serve": "scully serve",
