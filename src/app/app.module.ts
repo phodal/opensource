@@ -15,13 +15,19 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { WebpackTranslateLoader } from './webpack-translate-loader';
 import { FaqComponent } from './presentation/faq/faq.component';
+import { PractiseComponent } from './presentation/practise/practise.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, PatternComponent, FaqComponent],
+  declarations: [
+    AppComponent,
+    PatternComponent,
+    FaqComponent,
+    PractiseComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
