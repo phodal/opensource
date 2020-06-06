@@ -32,7 +32,7 @@ describe('ChecklistsComponent', () => {
           provide: ActivatedRoute,
           useValue: {
             fragment: of({}),
-            paramMap: of(convertToParamMap({ name: 'sample' })),
+            paramMap: of(convertToParamMap({ name: 'opensource-release' })),
           },
         },
       ],
