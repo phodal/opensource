@@ -28,11 +28,12 @@ function casePlugin(route, config) {
 }
 
 function checklistsPlugin(route, config) {
-  return Promise.resolve([{ route: '/checklists/sample' }]);
+  return Promise.resolve([{ route: '/checklists/opensource-release' }]);
+  return Promise.resolve([{ route: '/checklists/opensource-security' }]);
 }
 
 function practisePlugin(route, config) {
-  return Promise.resolve([{ route: '/practise/sample' }]);
+  return Promise.resolve([{ route: '/practise' }]);
 }
 
 function maturiyPlugin(route, config) {

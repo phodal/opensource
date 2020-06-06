@@ -7,7 +7,7 @@ const routes: Routes = [
     path: ':name',
     component: ChecklistsComponent,
   },
-  { path: '', pathMatch: 'full', redirectTo: 'sample' },
+  { path: '', pathMatch: 'full', redirectTo: 'opensource-release' },
 ];
 
 @NgModule({
