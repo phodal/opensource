@@ -51,13 +51,13 @@ describe('AppComponent', () => {
 
   it(`should have as title 'clean-angular'`, () => {
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ledge');
+    expect(app.title).toEqual('opensource');
   });
 
   it('should call window.open when click link', () => {
     spyOn(window, 'open');
 
-    component.openLink('https://devops.phdoal.com');
+    component.openLink('https://devops.phodal.com');
 
     expect(window.open).toHaveBeenCalled();
   });
