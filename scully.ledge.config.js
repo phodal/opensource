@@ -37,7 +37,11 @@ function practisePlugin(route, config) {
 }
 
 function maturiyPlugin(route, config) {
-  return Promise.resolve([{ route: '/maturity/sample' }]);
+  return Promise.resolve([
+    { route: '/maturity/evangelist' },
+    { route: '/maturity/project' },
+  ]);
+  s;
 }
 
 function skilltreePlugin(route, config) {

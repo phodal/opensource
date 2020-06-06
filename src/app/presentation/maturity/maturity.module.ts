@@ -12,7 +12,7 @@ const routes: Routes = [
     path: ':name',
     component: MaturityComponent,
   },
-  { path: '', pathMatch: 'full', redirectTo: 'sample' },
+  { path: '', pathMatch: 'full', redirectTo: 'project' },
 ];
 
 @NgModule({

@@ -4,7 +4,10 @@ import { MatDrawerContent } from '@angular/material/sidenav';
 import { ActivatedRoute } from '@angular/router';
 import { DocRoute } from '@ledge-framework/view/lib/ledge-multiple-docs/doc-route.model';
 
-export const lists: DocRoute[] = [{ displayName: '示例', source: 'sample' }];
+export const lists: DocRoute[] = [
+  { displayName: '布道师能力模型', source: 'evangelist' },
+  { displayName: '开源项目成熟度', source: 'project' },
+];
 
 @Component({
   selector: 'app-maturity',
