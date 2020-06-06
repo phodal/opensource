@@ -14,13 +14,14 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { WebpackTranslateLoader } from './webpack-translate-loader';
+import { FaqComponent } from './presentation/faq/faq.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, PatternComponent],
+  declarations: [AppComponent, PatternComponent, FaqComponent],
   imports: [
     BrowserModule,
     FormsModule,

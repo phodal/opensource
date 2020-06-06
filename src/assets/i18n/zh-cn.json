@@ -5,11 +5,11 @@
     "patterns": "基于我们的实践，我们提炼了位于它背后的模式与原则，帮助个人和组织更好地了解 DevOps 文化。",
     "practises": "我们从海量的 DevOps 内容中，提炼出了一系列的最佳实践，以更好地帮助企业进行 DevOps 实践。",
     "manual": "只凭实践与原则，无法让中小型 IT 团队进行 DevOps 转型，所以我们准备了详实的实施手册，以帮助您一步步前进。",
-    "solution": "即某一 DevOps 厂商的解决方案。（不收费，为了 Ledge 项目的可持续性，仅开放给将 Ledge 列为合作伙伴的厂商）",
-    "think-tank": "关于某一个特定领域的知识总汇，如前端、质量管理、需求管理等等。",
     "tool": "提供设计、实施 DevOps 过程中的工具，如设计 DevOps 等等",
-    "resources": "DevOps 相关的资源，如年度报告、书籍等"
+    "resources": "DevOps 相关的资源，如年度报告、书籍等",
+    "faq": "FAQ"
   },
+  "faq": "常见问题",
   "case-study": "案例学习",
   "patterns": "模式与原则",
   "practises": "最佳实践",
@@ -20,43 +20,11 @@
   "maturity": "度量",
   "report": "年度报告",
   "resource": "资源",
-  "resources": "DevOps 相关资源",
   "tool": "工具",
-  "analysis-tools": "分析工具",
-  "design-devops": "设计 DevOps",
-  "ledge-editor": "Ledge 编辑器",
   "checklists": "检查清单",
-  "blog": "专栏",
-  "ledge-introduction": "Ledge（源自 know-ledge，意指承载物）知识平台是基于我们所进行的一系列 DevOps 实践、敏捷实践、精益实践提炼出来的知识体系。",
-  "it-can": "它可以",
-  "homepage": {
-    "digital-forward": "帮助您的企业在数字化时代更好地前进",
-    "devops-period-tooltip": "DevOps 元素周期表 —— 选择您的 DevOps 工具",
-    "help-you-design-devops": "帮助您设计数字化时代的 DevOps 流程",
-    "devops-features": "DevOps 运动的主要特点是强烈倡导对构建软件的所有环节 (从集成、测试、发布到部署和基础架构管理) 进行全面的自动化和监控。",
-    "design-by-different": "从而根据不同的企业情况，会出现不同的 DevOps 流水线"
-  },
-  "tank-page": {
-    "frontend": "前端",
-    "requirements": "需求管理",
-    "qa": "质量管理",
-    "ops": "运营",
-    "microservices": "微服务",
-    "backend": "后端",
-    "refactoring": "重构"
-  },
   "job": "招聘",
   "skilltree": "技能树",
   "practise-page": {
-    "devops": "DevOps 最佳实践",
-    "test": "测试实践",
-    "agile": "敏捷实践",
-    "tech": "研发实践",
-    "platform": "DevOps 平台实践",
     "frontend-devops-practise": "前端 DevOps 实践"
-  },
-  "helper": {
-    "theme": "主题"
-  },
-  "guide": "帮助指南"
+  }
 }

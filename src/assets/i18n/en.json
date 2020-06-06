@@ -9,54 +9,20 @@
     "solution": "",
     "think-tank": "",
     "tool": "",
-    "resources": ""
+    "resources": "",
+    "faq": ""
   },
+  "faq": "FAQ",
   "patterns": "Patterns",
   "practises": "Practises",
   "manual": "Manual",
   "solution": "Solution",
-  "think-tank": "Think Tank",
-  "mobile": "Mobile",
   "maturity": "Maturity",
-  "report": "Report",
-  "resource": "Resource",
-  "resources": "DevOps Resources",
   "tool": "Tools",
-  "analysis-tools": "Analysis Tools",
-  "design-devops": "Design DevOps",
-  "ledge-editor": "Ledge Editor",
   "checklists": "Checklists",
-  "blog": "Blog",
-  "ledge-introduction": "Ledge (come from know-ledge, meaning carrier) knowledge platform is a knowledge system based on a series of DevOps practices, agile practices, and lean practices that we conduct.",
-  "it-can": "Ledge can",
-  "homepage": {
-    "digital-forward": "move forward business better in the digital transformation",
-    "devops-period-tooltip": "DevOps Periodic Table - pick up your DevOps tool",
-    "help-you-design-devops": "help your design DevOps process",
-    "devops-features": "DevOps is that it strongly advocates comprehensive automation and monitoring of all aspects of building software (from integration, testing, release to deployment and infrastructure management).",
-    "design-by-different": "different enterprise, different DevOps pipelines"
-  },
-  "tank-page": {
-    "frontend": "Frontend",
-    "requirements": "BA",
-    "qa": "QA",
-    "ops": "Operation",
-    "microservices": "MicroServices",
-    "backend": "Backend",
-    "refactoring": "Refactoring"
-  },
   "job": "Job",
   "skilltree": "Skill Tree",
   "practise-page": {
-    "devops": "DevOps Best Practise",
-    "test": "Test Best Practise",
-    "agile": "Agile Best Practise",
-    "tech": "Development Practise",
-    "platform": "DevOps Platform",
     "frontend-devops-practise": "Frontend DevOps Practise"
-  },
-  "helper": {
-    "theme": "Theme"
-  },
-  "guide": "Guide"
+  }
 }

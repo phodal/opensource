@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PatternComponent } from './presentation/pattern/pattern.component';
+import { FaqComponent } from './presentation/faq/faq.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'pattern',
     component: PatternComponent,
+  },
+  {
+    path: 'faq',
+    component: FaqComponent,
   },
   {
     path: 'home',
