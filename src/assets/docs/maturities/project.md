@@ -1,7 +1,5 @@
 # 开源项目成熟度
 
-![Open Source Maturity Model](https://en.wikipedia.org/wiki/OpenSource_Maturity_Model)
-
 ```maturity
  - 基础级成熟度
    - 产品文档
@@ -26,6 +24,8 @@
      - 设计
      - 过程和产品质量保证
 ```
+
+基于：[Open Source Maturity Model](https://en.wikipedia.org/wiki/OpenSource_Maturity_Model)
 
 英文原材料：
 
