@@ -24,7 +24,7 @@ const sitemapOptions = {
 };
 
 function casePlugin(route, config) {
-  return Promise.resolve([{ route: '/case-study/sample' }]);
+  return Promise.resolve([{ route: '/case-study/microsoft' }]);
 }
 
 function checklistsPlugin(route, config) {

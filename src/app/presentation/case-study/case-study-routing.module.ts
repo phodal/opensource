@@ -7,7 +7,7 @@ const routes: Routes = [
     path: ':case',
     component: CaseStudyComponent,
   },
-  { path: '', pathMatch: 'full', redirectTo: 'sample' },
+  { path: '', pathMatch: 'full', redirectTo: 'microsoft' },
 ];
 
 @NgModule({

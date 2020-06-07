@@ -2,7 +2,6 @@
   <mat-toolbar color="accent" [ngClass]="isHome() ? 'app-header' : ''">
     <mat-toolbar-row>
       <button mat-button class="button-logo" routerLink="/home">
-<!--        <img src="/assets/images/logo.svg" alt="logo" class="logo">-->
         <span>Open Source</span>
       </button>
       <span class="spacer"></span>
@@ -33,7 +32,7 @@
 
 <ng-template #navMenu>
   <button mat-button routerLink="/home" routerLinkActive="active">{{ 'home' | translate}}</button>
-  <button mat-button routerLink="/case-study" class="intro-case" routerLinkActive="active"
+  <button mat-button routerLink="/case-study/microsoft" class="intro-case" routerLinkActive="active"
           matTooltip="{{ 'tips.case-study' | translate}}">
     {{ 'case-study' | translate}}
   </button>
