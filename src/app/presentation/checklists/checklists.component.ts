@@ -5,7 +5,7 @@ import { MatDrawerContent } from '@angular/material/sidenav';
 import { DocRoute } from '@ledge-framework/view/lib/ledge-multiple-docs/doc-route.model';
 
 export const lists: DocRoute[] = [
-  { displayName: '发布开源检查清单', source: 'opensource-release' },
+  { displayName: '开源软件发布检查清单', source: 'opensource-release' },
   { displayName: '开源安全检查清单', source: 'opensource-security' },
 ];
 
