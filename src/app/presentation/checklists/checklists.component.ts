@@ -7,6 +7,8 @@ import { DocRoute } from '@ledge-framework/view/lib/ledge-multiple-docs/doc-rout
 export const lists: DocRoute[] = [
   { displayName: '开源软件发布检查清单', source: 'opensource-release' },
   { displayName: '开源安全检查清单', source: 'opensource-security' },
+  { displayName: '开源开发检查清单', source: 'opensource-development' },
+  { displayName: '开源部署检查清单', source: 'opensource-deployment' },
 ];
 
 @Component({
