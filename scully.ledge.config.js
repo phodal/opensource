@@ -1,5 +1,5 @@
-const {Sitemap} = require('@gammastream/scully-plugin-sitemap');
-const {registerPlugin} = require('@scullyio/scully');
+const { Sitemap } = require('@gammastream/scully-plugin-sitemap');
+const { registerPlugin } = require('@scullyio/scully');
 
 const defaultPostRenderers = [Sitemap];
 
@@ -24,32 +24,40 @@ const sitemapOptions = {
 };
 
 function casePlugin(route, config) {
-  return Promise.resolve([{route: '/case-study/microsoft'}]);
+  return Promise.resolve([
+    { route: '/case-study/alibaba' },
+    { route: '/case-study/baidu' },
+    { route: '/case-study/tencent' },
+    { route: '/case-study/huawei' },
+    { route: '/case-study/microsoft' },
+    { route: '/case-study/google' },
+    { route: '/case-study/thoughtworks' },
+  ]);
 }
 
 function checklistsPlugin(route, config) {
   return Promise.resolve([
-    {route: '/checklists/opensource-release'},
-    {route: '/checklists/opensource-security'},
-    {route: '/checklists/opensource-development'},
-    {route: '/checklists/opensource-deployment'},
+    { route: '/checklists/opensource-release' },
+    { route: '/checklists/opensource-security' },
+    { route: '/checklists/opensource-development' },
+    { route: '/checklists/opensource-deployment' },
   ]);
 }
 
 function practisePlugin(route, config) {
-  return Promise.resolve([{route: '/practise'}]);
+  return Promise.resolve([{ route: '/practise' }]);
 }
 
 function maturiyPlugin(route, config) {
   return Promise.resolve([
-    {route: '/maturity/evangelist'},
-    {route: '/maturity/project'},
+    { route: '/maturity/evangelist' },
+    { route: '/maturity/project' },
   ]);
   s;
 }
 
 function skilltreePlugin(route, config) {
-  return Promise.resolve([{route: '/skilltree/sample'}]);
+  return Promise.resolve([{ route: '/skilltree/sample' }]);
 }
 
 const validator = async (conf) => [];
