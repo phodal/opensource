@@ -13,6 +13,7 @@
   - 2015 微软开源 Visual Studio Code；将 RedHat 企业 Linux 带到 Azure 云上
   - 2016 微软已将所有领先的 Linux 发行版带到了 Azure 云上；加入 Linux 基金会成为董事；发布跨平台部署平台.NET(windows, Linx, Mac)；跃居 GitHub 上开源贡献人数最多的组织
   - 2018 微软 75 亿美元收购 GitHub
+  - 2020 Github 收购 NPM
 
 ## 步骤
 
