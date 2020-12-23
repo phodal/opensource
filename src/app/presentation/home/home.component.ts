@@ -16,6 +16,8 @@ import { isScullyRunning } from '@scullyio/ng-lib';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+  data = mdData.default;
+
   constructor(
     title: Title,
     private router: Router,
