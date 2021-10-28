@@ -4,7 +4,7 @@ const { registerPlugin } = require('@scullyio/scully');
 const defaultPostRenderers = [Sitemap];
 
 const sitemapOptions = {
-  urlPrefix: 'https://devops.phodal.com/',
+  urlPrefix: 'https://opensource.phodal.com/',
   sitemapFilename: 'sitemap.xml',
   changeFreq: 'hourly',
   priority: [

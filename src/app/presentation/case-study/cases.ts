@@ -10,5 +10,6 @@ export const cases: Cases = [
   { displayName: '腾讯', source: 'tencent' },
   { displayName: '百度', source: 'baidu' },
   { displayName: '华为', source: 'huawei' },
+  { displayName: 'PingCap', source: 'pingcap' },
   { displayName: 'ThoughtWorks', source: 'thoughtworks' },
 ];
